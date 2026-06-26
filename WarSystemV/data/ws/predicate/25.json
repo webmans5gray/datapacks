@@ -1,0 +1,11 @@
+{
+  "condition": "minecraft:random_chance",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {}
+    }
+  ],
+  "chance": 0.25
+}
