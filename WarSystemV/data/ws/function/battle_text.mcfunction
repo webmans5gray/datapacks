@@ -13,3 +13,5 @@ scoreboard players set Defending Supply 0
 
 scoreboard players set Attacking Absorption 0
 scoreboard players set Defending Absorption 0
+
+gamerule send_command_feedback false

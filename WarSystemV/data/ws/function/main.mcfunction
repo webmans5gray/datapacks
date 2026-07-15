@@ -29,10 +29,13 @@ execute if entity @a[team=Defending] run function ws:during_battle
 
 #OIL
 execute as @e[type=item,nbt={OnGround:1b,Item:{id:"minecraft:player_head",count:1,components:{"minecraft:custom_data":{oil:1}}}}] at @s run function ws:battle/oil
-execute as @e[type=marker,tag=oil2] if predicate ws:25 run function ws:battle/oil3
+execute as @e[type=marker,tag=oil2] at @s if predicate ws:12.5 run function ws:battle/oil3
+scoreboard players add @e[type=marker,tag=oil2] junktimer 1
+execute as @e[type=marker,tag=oil2] at @s if score @s junktimer matches 140 run kill @s
 
+#SURRENDER
+execute as @a at @s if entity @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:100b,duration:1}]}] run function ws:battle/surrender
 
-
-
-
-
+#Death cleanup
+execute as @a[team=Attacking] if score @s timeSinceDeath matches 5 run function ws:battle/dead_attacker
+execute as @a[team=Defending] if score @s timeSinceDeath matches 5 run function ws:battle/dead_defending
