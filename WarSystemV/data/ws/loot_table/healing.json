@@ -1,0 +1,146 @@
+{
+  "type": "empty",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 4923391,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:regeneration",
+                      "amplifier": 3,
+                      "duration": 40
+                    },
+                    {
+                      "id": "minecraft:health_boost",
+                      "amplifier": 1,
+                      "duration": 1200
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "#4B1FFF",
+                  "italic": false,
+                  "text": "Vehzeillian Draught"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "Châtillon Standard"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 5635891,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:regeneration",
+                      "amplifier": 3,
+                      "duration": 160
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "#55FF33",
+                  "italic": false,
+                  "text": "Dasharian Tonic"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "Châtillon Standard"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 8530777,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:regeneration",
+                      "amplifier": 1,
+                      "duration": 100
+                    },
+                    {
+                      "id": "minecraft:resistance",
+                      "amplifier": 0,
+                      "duration": 400
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "#822B59",
+                  "italic": false,
+                  "text": "Lutum Elixyr"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

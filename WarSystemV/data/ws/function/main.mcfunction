@@ -17,7 +17,6 @@ execute as @e[tag=gw_tower] at @s positioned ~ ~-1 ~ run function ws:battle/towe
 effect give @a[team=Attacking] minecraft:saturation infinite 1 true
 effect give @a[team=Defending] minecraft:saturation infinite 1 true
 
-execute as @e[type=item,nbt={OnGround:1b,Item:{id:"minecraft:ladder",count:1,components:{"minecraft:custom_data":{ropes:1}}}}] at @s run function ws:battle/ropes
 
 execute as @e[type=squid,tag=smugnag1] at @s run function ws:battle/enemy/smugnag
 
@@ -38,4 +37,27 @@ execute as @a at @s if entity @s[nbt={active_effects:[{id:"minecraft:unluck",amp
 
 #Death cleanup
 execute as @a[team=Attacking] if score @s timeSinceDeath matches 5 run function ws:battle/dead_attacker
-execute as @a[team=Defending] if score @s timeSinceDeath matches 5 run function ws:battle/dead_defending
+execute as @a[team=Defending] if score @s timeSinceDeath matches 5 run function ws:battle/dead_defender
+
+#fireball
+scoreboard players add @e[type=snowball] timer 1
+execute as @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{fireball:1}}}}] at @s if score @s timer matches 2.. run function ws:battle/fireball
+
+#bardic
+execute as @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{abardic:1}}}}] at @s run function ws:battle/abardic
+execute as @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{dbardic:1}}}}] at @s run function ws:battle/dbardic
+
+execute as @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{alife:1}}}}] at @s run function ws:battle/alife
+execute as @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{dlife:1}}}}] at @s run function ws:battle/dlife
+
+
+
+#ropes abd barricade
+execute as @e[type=item,nbt={OnGround:1b,Item:{id:"minecraft:ladder",count:1,components:{"minecraft:custom_data":{ropes:1}}}}] at @s run function ws:battle/ropes
+
+execute as @e[type=item,nbt={OnGround:1b,Item:{id:"minecraft:player_head",count:1,components:{"minecraft:custom_data":{barricade:1}}}}] at @s run function ws:battle/barricade
+
+#arachnide
+execute as @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{cobweb:1}}}}] at @s if score @s timer matches 4.. run function ws:battle/cobweb
+execute as @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{cobweb:1}}}}] at @s if score @s timer matches 18.. run function ws:battle/kill_cobweb
+
