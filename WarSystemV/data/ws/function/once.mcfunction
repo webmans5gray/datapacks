@@ -4,8 +4,7 @@
  #
  # Created by .
 ##
-team add Attacking
-team add Defending
+
 scoreboard objectives add Supply dummy
 scoreboard objectives add Absorption dummy
 scoreboard objectives add timer dummy
