@@ -1,0 +1,135 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:item_model": "iron_cutlass",
+                "minecraft:enchantments": {
+                  "knockback": 1,
+                  "sweeping_edge": 1
+                },
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "gold",
+                  "italic": false,
+                  "text": "Chagarlanian Cutlass"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:item_model": "diamond_morning_star",
+                "minecraft:enchantments": {
+                  "knockback": 1,
+                  "sharpness": 1
+                },
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "gold",
+                  "italic": false,
+                  "text": "Ragnar's Mace"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:item_model": "copper_scythe",
+                "minecraft:enchantments": {
+                  "sweeping_edge": 3
+                },
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "gold",
+                  "italic": false,
+                  "text": "Gilford's Harvester"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:golden_sword",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:item_model": "golden_dagger",
+                "minecraft:enchantments": {
+                  "fire_aspect": 1
+                },
+                "minecraft:max_damage": 5
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "gold",
+                  "italic": false,
+                  "text": "Dartius Dagger"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

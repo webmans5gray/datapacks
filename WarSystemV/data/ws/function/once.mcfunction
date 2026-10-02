@@ -20,4 +20,14 @@ scoreboard objectives add timeSinceDeath minecraft.custom:minecraft.time_since_d
 
 team add Surrendered
 team modify Surrendered suffix {"bold":true,"text":" (Surrendered)"}
+team add Attacking
+team add Defending
+
+team modify Attacking color red
+team modify Defending color dark_aqua
+team modify Attacking nametagVisibility hideForOtherTeams
+team modify Defending nametagVisibility hideForOtherTeams
+
+team modify Attacking friendlyFire false
+team modify Defending friendlyFire false
 

@@ -52,6 +52,7 @@ execute as @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_d
 
 
 
+
 #ropes abd barricade
 execute as @e[type=item,nbt={OnGround:1b,Item:{id:"minecraft:ladder",count:1,components:{"minecraft:custom_data":{ropes:1}}}}] at @s run function ws:battle/ropes
 
